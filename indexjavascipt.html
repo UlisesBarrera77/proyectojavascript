@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta chatset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial.scale="1.0">
+        <title>Formulario de contacto</title>
+        <link rel="stylesheet" href="stylesjavascript.css">
+    </head>
+    <body>
+        <h1>Formulario de Contacto</h1>
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tipo">Tipo de contacto</label>
+            <select type="tipo" id="tipo" name="tipo" required>
+                <option value="" disabled selected>Seleccione una opcion</option>
+                <option value="soporte">Soporte</option>
+                <option value="ventas">Ventas</option>
+            </select>
+
+            <label for="descripcion">Descripcion</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="mensaje"></div>
+        <script scr="script.js"></script>
+    </body>
+</html>
